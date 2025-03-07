@@ -124,7 +124,7 @@ endpoints:
   #   capabilities: ["execute_code", "file_search", "actions", "tools"]
   custom:
     - name: "BoarResearchAgent"
-      apiKey: "dummy"
+      apiKey: "boar-temp-api-key"
       baseURL: 'https://api.teby.ai/v1'
       models:
           default: ['boar-research-agent']
@@ -138,7 +138,7 @@ endpoints:
       iconURL: https://raw.githubusercontent.com/ProjectBoar/LibreChat/main/boar_icon.png
 
     - name: "BoarArbitrageAgent"
-      apiKey: "dummy"
+      apiKey: "boar-temp-api-key"
       baseURL: 'https://api.teby.ai/v1'
       models:
           default: ['boar-arbitrage-agent']
