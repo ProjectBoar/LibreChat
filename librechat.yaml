@@ -13,13 +13,13 @@ interface:
   # Privacy policy settings
   privacyPolicy:
     externalUrl: 'https://teby.ai'
-    openNewTab: true
+    openNewTab: false
 
   # Terms of service
   termsOfService:
     externalUrl: 'https://teby.ai'
-    openNewTab: true
-    modalAcceptance: true
+    openNewTab: false
+    modalAcceptance: false
     modalTitle: "Terms of Service for Boar Trading Agent"
     modalContent: |
       # Welcome to Boar Trading Agent!
@@ -123,18 +123,32 @@ endpoints:
   #   (optional) Agent Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
   #   capabilities: ["execute_code", "file_search", "actions", "tools"]
   custom:
-    - name: "BoarTradingAgent"
+    - name: "BoarResearchAgent"
       apiKey: "dummy"
       baseURL: 'https://api.teby.ai/v1'
       models:
-          default: ['boar-trading-agent']
+          default: ['boar-research-agent']
           fetch: false
       titleConvo: true
-      titleModel: 'BoarAgent'
+      titleModel: 'BoarResearchAgent'
       summarize: false
-      summaryModel: 'BoarTradingAgent'
+      summaryModel: 'BoarResearchAgent'
       forcePrompt: false
-      modelDisplayLabel: 'BoarTradingAgent'
+      modelDisplayLabel: 'BoarResearchAgent'
+      iconURL: https://raw.githubusercontent.com/ProjectBoar/LibreChat/main/boar_icon.png
+
+    - name: "BoarArbitrageAgent"
+      apiKey: "dummy"
+      baseURL: 'https://api.teby.ai/v1'
+      models:
+          default: ['boar-arbitrage-agent']
+          fetch: false
+      titleConvo: true
+      titleModel: 'BoarArbitrageAgent'
+      summarize: false
+      summaryModel: 'BoarArbitrageAgent'
+      forcePrompt: false
+      modelDisplayLabel: 'BoarArbitrageAgent'
       iconURL: https://raw.githubusercontent.com/ProjectBoar/LibreChat/main/boar_icon.png
   
 # fileConfig:
