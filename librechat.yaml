@@ -130,9 +130,9 @@ endpoints:
           default: ['boar-research-agent']
           fetch: false
       titleConvo: true
-      titleModel: 'BoarResearchAgent'
+      titleModel: 'boar-summary-model'
       summarize: false
-      summaryModel: 'BoarResearchAgent'
+      summaryModel: 'boar-summary-model'
       forcePrompt: false
       modelDisplayLabel: 'BoarResearchAgent'
       iconURL: https://raw.githubusercontent.com/ProjectBoar/LibreChat/main/boar_icon.png
@@ -144,9 +144,9 @@ endpoints:
           default: ['boar-arbitrage-agent']
           fetch: false
       titleConvo: true
-      titleModel: 'BoarArbitrageAgent'
+      titleModel: 'boar-summary-model'
       summarize: false
-      summaryModel: 'BoarArbitrageAgent'
+      summaryModel: 'boar-summary-model'
       forcePrompt: false
       modelDisplayLabel: 'BoarArbitrageAgent'
       iconURL: https://raw.githubusercontent.com/ProjectBoar/LibreChat/main/boar_icon.png
